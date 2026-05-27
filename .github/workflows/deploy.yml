@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9 # Specify version or omit to use packageManager in package.json
       - uses: actions/setup-node@v3
         with:
           node-version: '24.x'
