@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+    --text-10xl: 8rem;
+    --text-10xl--line-height: 1;
+    --text-11xl: 9rem;
+    --text-11xl--line-height: 1;
+    --text-12xl: 10rem;
+    --text-12xl--line-height: 1;
+    --text-13xl: 11rem;
+    --text-13xl--line-height: 1;
+
+    --font-sans: 'Public Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Harmoni';
+    src: url('/Harmoni.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-harmoni {
+    font-family: Harmoni, serif;
+}
+
+
+html {
+    color-scheme: only dark;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--color-neutral-300);
+    margin: 1.5rem 0;
+}
