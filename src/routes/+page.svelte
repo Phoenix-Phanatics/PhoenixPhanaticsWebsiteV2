@@ -3,7 +3,7 @@
     import forward from "$lib/assets/forward.svg";
     import Link from "$lib/components/Link.svelte";
     import {cubicInOut} from "svelte/easing";
-    import team from "$lib/assets/team.JPG?enhanced"
+    import team from "$lib/assets/team.jpg?enhanced"
     import middlesexCounty from "$lib/assets/middlesex county.jpg?enhanced";
     import Button from "$lib/components/Button.svelte";
 
@@ -30,12 +30,16 @@
 
 </script>
 
+<svelte:head>
+    <title>Phoenix Phanatics</title>
+</svelte:head>
+
 <div class="contents relative">
-    <div class="w-full p-10 overflow-hidden">
+    <div class="w-full md:p-10 overflow-hidden">
         <div id="about" class="flex flex-col bg-amber-800 m-auto p-10 relative z-10 w-full shadow-[0_-10px_20px_rgba(0,0,0,0.3)] scroll-m-24">
             <h1 class="uppercase text-4xl font-harmoni max-w-5xl m-auto w-full py-5">About Us</h1>
-            <div class="w-full overflow-clip -rotate-5 scale-120 relative">
-                <enhanced:img src={middlesexCounty} alt="Middlesex County" class="overflow-hidden h-72 w-full object-cover -mt-10" />
+            <div class="hidden md:block w-full overflow-clip md:-rotate-5 md:scale-130 lg:scale-120 relative">
+                <enhanced:img src={middlesexCounty} alt="Middlesex County" class="overflow-hidden h-72 w-full object-cover -mt-10 " />
                 <div class="w-full bg-black/60 text-amber-100 py-2 flex whitespace-nowrap overflow-hidden">
                     <div class="animate-marquee inline-block">
                         Carteret &bull; Cranbury &bull; Dunellen &bull; East Brunswick &bull; Edison &bull; Helmetta &bull; Highland Park &bull; Jamesburg &bull; Metuchen &bull; Middlesex &bull; Milltown &bull; Monroe &bull; New Brunswick &bull; North Brunswick &bull; Old Bridge &bull; Perth Amboy &bull; Piscataway &bull; Plainsboro &bull; Sayreville &bull; South Amboy &bull; South Brunswick &bull; South Plainfield &bull; South River &bull; Spotswood &bull; Woodbridge &bull;&nbsp;
@@ -45,17 +49,17 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-25 w-full text-white relative z-30">
-                <h2 class="text-4xl mb-4 max-w-5xl mx-auto flex items-start justify-between gap-3">
+            <div class="md:mt-25 w-full text-white relative z-30">
+                <h2 class="text-2xl md:text-4xl mb-4 max-w-5xl mx-auto flex items-start justify-between gap-3">
                     <span class="w-full block">1. We are a <b>community team</b> based out of the general <b>Middlesex County</b> Area.</span>
-                    <button class="text-amber-200 hover:text-white transition-all duration-300 cursor-pointer flex-shrink-0 {expandedSection1 ? 'rotate-180' : ''}" onclick={() => expandedSection1 = !expandedSection1} aria-label="Toggle section">
+                    <button class="text-amber-200 hover:text-white transition-all duration-300 cursor-pointer shrink-0 {expandedSection1 ? 'rotate-180' : ''}" onclick={() => expandedSection1 = !expandedSection1} aria-label="Toggle section">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                 </h2>
                 {#if expandedSection1}
-                    <div class="max-w-5xl mx-auto w-full" transition:slide={{easing: cubicInOut}}>
+                    <div class="md:max-w-5xl md:mx-auto w-full" transition:slide={{easing: cubicInOut}}>
                         <button
-                                class="text-left w-full text-lg shadow-[inset_0_6px_15px_rgba(0,0,0,0.4)] bg-amber-900/80 text-amber-50 p-6 rounded-2xl cursor-pointer transition-all hover:bg-amber-900/90"
+                                class="text-left w-full text-lg shadow-[inset_0_6px_15px_rgba(0,0,0,0.4)] bg-amber-900/80 text-amber-50 p-2 md:p-6 rounded-2xl cursor-pointer transition-all hover:bg-amber-900/90"
                                 onclick={() => expandedSection1 = false}
                         >
                             <span class="flex w-full flex-col lg:flex-row items-stretch gap-8">
@@ -76,7 +80,7 @@
                 {/if}
             </div>
             <div class="mt-5 mx-auto w-full text-white relative z-30">
-                <h2 class="text-4xl mb-4 max-w-5xl mx-auto flex items-start md:items-center gap-3">
+                <h2 class="text-2xl md:text-4xl mb-4 max-w-5xl mx-auto flex items-start md:items-center gap-3">
                     <span class="w-full block">2. We founded our team in the <b>2026 REBUILT®</b> season.</span>
                     <button class="text-amber-200 hover:text-white transition-all duration-300 cursor-pointer flex-shrink-0 {expandedSection2 ? 'rotate-180' : ''}" onclick={() => expandedSection2 = !expandedSection2} aria-label="Toggle section">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
@@ -85,7 +89,7 @@
                 {#if expandedSection2}
                     <div class="max-w-5xl mx-auto w-full" transition:slide={{easing: cubicInOut}}>
                         <button
-                                class="text-left w-full text-lg shadow-[inset_0_6px_15px_rgba(0,0,0,0.4)] bg-amber-900/80 text-amber-50 p-6 rounded-2xl cursor-pointer transition-all hover:bg-amber-900/90"
+                                class="text-left w-full text-lg shadow-[inset_0_6px_15px_rgba(0,0,0,0.4)] bg-amber-900/80 text-amber-50 p-2 md:p-6 rounded-2xl cursor-pointer transition-all hover:bg-amber-900/90"
                                 onclick={() => expandedSection2 = false}
                         >
                             <span class="block w-full">
@@ -103,7 +107,7 @@
                 {/if}
             </div>
             <div class="mt-5 mx-auto w-full text-white relative z-30">
-                <h2 class="text-4xl mb-4 max-w-5xl mx-auto flex items-start md:items-center gap-3">
+                <h2 class="text-2xl md:text-4xl mb-4 max-w-5xl mx-auto flex items-start md:items-center gap-3">
                     <span class="w-full block">3. Our <b>mission</b> is to <b>spread robotics</b> to those who may have not been able to in <b>their own schools</b>. We hope to spread the love of robotics and competition that FRC inspires.</span>
                     <button class="text-amber-200 hover:text-white transition-all duration-300 cursor-pointer flex-shrink-0 {expandedSection3 ? 'rotate-180' : ''}" onclick={() => expandedSection3 = !expandedSection3} aria-label="Toggle section">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
@@ -112,7 +116,7 @@
                 {#if expandedSection3}
                     <div class="max-w-5xl mx-auto w-full" transition:slide={{easing: cubicInOut}}>
                         <button
-                                class="text-left w-full text-lg shadow-[inset_0_6px_15px_rgba(0,0,0,0.4)] bg-amber-900/80 text-amber-50 p-6 rounded-2xl cursor-pointer transition-all hover:bg-amber-900/90"
+                                class="text-left w-full text-lg shadow-[inset_0_6px_15px_rgba(0,0,0,0.4)] bg-amber-900/80 text-amber-50 p-2 md:p-6 rounded-2xl cursor-pointer transition-all hover:bg-amber-900/90"
                                 onclick={() => expandedSection3 = false}
                         >
                             <span class="block w-full">
@@ -135,7 +139,7 @@
 </div>
 
 <div class="contents relative">
-    <div class="w-full p-10 overflow-hidden">
+    <div class="w-full mt-10 md:mt-0 md:p-10 overflow-hidden">
         <div id="sponsors" class="flex flex-col bg-amber-800 m-auto p-10 relative z-10 w-full shadow-[0_-10px_20px_rgba(0,0,0,0.3)] scroll-m-24">
             <h1 class="uppercase text-4xl font-harmoni max-w-5xl m-auto w-full">our sponsors</h1>
             <div class="flex flex-row flex-wrap max-w-5xl mx-auto w-full gap-2">
@@ -159,18 +163,20 @@
                     <enhanced:img src={slf} alt="Sulimani law firm" class="w-full h-full object-contain" />
                 </a>
             </div>
-            <Link icon={forward} class="w-max self-end" url="/sponsors#sponsors">View more</Link>
+            <Link icon={forward} class="w-max self-end mt-2" url="/sponsors#sponsors">View more</Link>
         </div>
     </div>
 </div>
 
 <div class="contents relative">
-    <div class="w-full p-10 overflow-hidden">
+    <div class="w-full md:p-10 mt-10 md:mt-0 overflow-hidden">
         <div id="info" class="flex flex-col bg-amber-800 m-auto p-10 relative z-10 w-full shadow-[0_-10px_20px_rgba(0,0,0,0.3)] scroll-m-24">
             <h1 class="uppercase text-4xl font-harmoni max-w-5xl m-auto w-full">Find out more</h1>
-            <div class="flex flex-row flex-wrap max-w-5xl mx-auto w-full gap-2">
-                <Link target="_blank" url="https://www.firstinspires.org" icon={forward}>What is FRC?</Link>
-                <Link target="_blank" url="https://www.firstinspires.org" icon={forward}>What do robotics teams do?</Link>
+            <div class="flex flex-row flex-wrap max-w-5xl mx-auto w-full gap-2 mt-2">
+                <Link url="https://firstinspires.org" icon={forward}>FIRST's website</Link>
+                <Link url="/info#what" icon={forward}>What is FRC?</Link>
+                <Link url="/info#why" icon={forward}>Why join us?</Link>
+                <Link url="/sponsors#finances" icon={forward}>Our Financials</Link>
             </div>
             <div class="mt-5 w-full max-w-5xl mx-auto flex flex-col justify-center gap-2">
                 <h2 class="font-bold uppercase">Our socials</h2>
@@ -183,19 +189,19 @@
 
             <div class="mt-4 w-full flex flex-col justify-center">
                 <h2 id="stats" class="font-bold uppercase max-w-5xl mx-auto w-full relative z-20 scroll-m-28 text-white">Our TBA Stats</h2>
-                <div class="w-full overflow-clip -rotate-5 scale-120 relative">
+                <div class="w-full overflow-clip py-2 md:py-0 md:-rotate-5 md:scale-130 lg:scale-120 relative">
                     <a href="https://www.thebluealliance.com/team/11104" target="_blank" rel="noopener noreferrer" class="block w-full h-full group relative bg-black">
                         <enhanced:img src={tbaImg} alt="The Blue Alliance" class="inset-0 w-full h-max object-cover transition-all duration-300 group-hover:brightness-50 opacity-90 group-hover:opacity-100" />
-                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center p-6 bg-black/40">
-                            <svg class="w-12 h-12 text-white mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
-                            <span class="text-white text-3xl font-bold mb-2">View our TheBlueAlliance stats</span>
-                            <span class="text-white text-lg max-w-2xl">TBA is a website where you can see robotics' teams' stats and performance in one aggregated centre.</span>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center p-6 bg-black/50">
+                            <svg class="hidden md:block md:w-12 md:h-12 text-white md:mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
+                            <span class="text-white text- md:text-3xl font-bold md:mb-2">Click to view our TheBlueAlliance stats</span>
+                            <span class="text-white hidden md:block md:text-lg max-w-2xl">TBA is a website where you can see robotics' teams' stats and performance in one aggregated centre.</span>
                         </div>
                     </a>
                 </div>
             </div>
 
-            <div class="mt-24 w-full flex flex-col justify-center">
+            <div class="md:mt-24 w-full flex flex-col justify-center">
                 <h2 id="contact" class="font-bold uppercase max-w-5xl mx-auto w-full relative z-20 mb-6 text-white scroll-m-28">Contact Us</h2>
                 <form onsubmit={submitContactForm} class="max-w-5xl mx-auto w-full flex flex-col gap-4 relative z-20 text-white">
                     <div class="flex flex-col md:flex-row gap-4">

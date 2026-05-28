@@ -81,10 +81,10 @@
     </div>
 
     <div class="relative z-20 text-center mt-30">
-        <h1 class="relative text-13xl/24 uppercase font-harmoni text-amber-100">
+        <h1 class="relative text-8xl/20 md:text-11xl/28 lg:text-11xl/24 xl:text-13xl/24 uppercase font-harmoni text-amber-100">
             Phoenix Phanatics
 <!--            -bottom-48 -left-42-->
-            <span class="absolute pointer-events-none z-50 -bottom-64 -right-56 flex">
+            <span class="absolute pointer-events-none z-50 -bottom-64 -right-56 flex lg:block hidden">
                 {#if mounted}
                     <div transition:fly={{y: 2000, duration: 3000, opacity: 1}} class="rotate-60 display-contents">
                         <enhanced:img src={phoenixImg} alt="Flying Phoenix" class="h-144 scale-50 w-auto filter-[drop-shadow(5px_5px_5px_#222)]" />
@@ -93,17 +93,17 @@
             </span>
         </h1>
         <h2 class="text-4xl uppercase font-sans text-amber-100">Team 11104</h2>
-        <p class="mt-4 text-xl max-w-2xl m-auto">
+        <p class="mt-4 p-2 md:text-xl max-w-2xl m-auto">
             We're a small happy-go-lucky <b>rookie team</b> who's in FIRST Robotics Competition to both
             <b>inspire and become inspired</b> by and through robotics! We've made it through
             our first season, and are ready to go forward!
         </p>
         <div class="p-5 flex flex-row gap-2 mx-auto w-max">
-            <Button href="/">Join us</Button>
-            <Button href="/">Contact us</Button>
+<!--            <Button href="/">Join us</Button>-->
+<!--            <Button href="/">Contact us</Button>-->
         </div>
     </div>
-    <div class="bottom-8 absolute text-sm opacity-50 text-white">
+    <div class="bottom-8 absolute text-sm opacity-50 text-center px-2 text-white">
         Sponsored by Sulimani Law Firm, NASA, Hack Club, Argosy Foundation, BenaHealth for the 2026 Season.
     </div>
 </div>

@@ -80,7 +80,7 @@
 </svelte:head>
 
 <div class="contents relative">
-    <div id="what" class="w-full p-10 overflow-hidden">
+    <div id="what" class="w-full md:p-10 overflow-hidden">
         <div class="flex flex-col bg-amber-800 m-auto p-10 relative z-10 w-full shadow-[0_-10px_20px_rgba(0,0,0,0.3)] text-white">
             <h1 class="uppercase text-4xl font-harmoni w-full py-5 max-w-5xl m-auto">What is FRC?</h1>
 
@@ -158,7 +158,7 @@
         </div>
     </div>
 
-    <div id="why" class="w-full p-10 overflow-hidden">
+    <div id="why" class="w-full md:p-10 mt-10 md:mt-0 overflow-hidden">
         <div class="flex flex-col bg-amber-800 m-auto p-10 relative z-10 w-full shadow-[0_-10px_20px_rgba(0,0,0,0.3)] text-white">
             <h1 class="uppercase text-4xl font-harmoni w-full py-5 max-w-5xl m-auto">Why join us?</h1>
 
@@ -178,19 +178,19 @@
                     which makes this team a lot more personal for everyone involved.
                 </p>
 
-                <div class=" bg-amber-900/50 rounded-2xl border border-amber-700/50 shadow-inner relative overflow-hidden my-10 md:h-48">
-                    <div class="text-9xl text-amber-500 opacity-20 absolute -top-4 -left-2 font-serif pointer-events-none z-0">"</div>
+                <div class=" bg-amber-900/50 rounded-2xl border border-amber-700/50 shadow-inner relative overflow-hidden my-10 h-88 md:h-48">
+                    <div class=" text-amber-500 opacity-20 absolute -top-4 -left-2 font-serif pointer-events-none z-0">"</div>
 
                     {#key currentQuoteIndex}
-                        <div class="absolute inset-0 p-8 pt-12 md:pt-8 flex flex-col md:flex-row items-center md:items-end justify-between gap-6"
+                        <div class="absolute inset-0 p-2 md:p-8 pt-8 md:pt-8 flex flex-col md:flex-row items-center md:items-end md:justify-between gap-6"
                              in:fly={{ y: 20, duration: 800, delay: 300 }}
                              out:fade={{ duration: 300 }}>
-                            <blockquote class="text-3xl lg:text-4xl font-harmoni text-amber-100 flex-1 text-center md:text-left z-10 px-4 md:px-8 py-4 leading-normal">
+                            <blockquote class="text-2xl/20 md:text-2xl lg:text-4xl font-harmoni text-amber-100 flex-1 text-center md:text-left z-10 px-4 md:px-8 md:py-4 leading-normal">
                                 {quotes[currentQuoteIndex].text}
                             </blockquote>
-                            <div class="flex flex-col items-center md:items-end shrink-0 z-10 md:pb-6 md:pr-4">
+                            <div class="flex flex-col items-center md:items-end shrink-0 z-10 pb-6 md:pb-6 md:pr-4">
                                 <div class="w-16 h-1 bg-amber-500 mb-3"></div>
-                                <cite class="text-base w-min font-sans font-bold text-amber-200 uppercase tracking-widest not-italic text-center md:text-right">
+                                <cite class="text-base md:w-min font-sans font-bold text-amber-200 uppercase tracking-widest not-italic text-center md:text-right">
                                     {quotes[currentQuoteIndex].author}
                                 </cite>
                                 <div class="text-sm font-sans font-bold text-amber-200 not-italic text-center md:text-right">
@@ -237,7 +237,7 @@
                     introduce you to this new world.
                 </p>
 
-                <div class="relative w-full overflow-hidden shadow-2xl mt-8 rounded-xl h-96">
+                <div class="relative w-full overflow-hidden shadow-2xl mt-8 h-96">
                     {#each teamImages as img, i}
                         <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out {i === currentTeamIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'}">
                             <enhanced:img

@@ -69,7 +69,7 @@
 </svelte:head>
 
 <div class="contents relative">
-    <div id="sponsors" class="w-full p-10 overflow-hidden">
+    <div id="sponsors" class="w-full md:p-10 overflow-hidden">
         <div class="flex flex-col bg-amber-800 m-auto p-10 relative z-10 w-full shadow-[0_-10px_20px_rgba(0,0,0,0.3)] text-white">
             <h1 class="uppercase text-4xl font-harmoni w-full py-5 max-w-5xl m-auto">Our Sponsors</h1>
             <div class="max-w-5xl m-auto">
@@ -96,14 +96,14 @@
                     {/each}
                 </div>
             </div>
-            <h2 class="text-2xl mt-4 max-w-5xl mx-auto flex items-start md:items-center gap-3">
+            <h2 class="text-2xl mt-4 max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-3">
                 <span class="w-full block">If you would be at all interested in <b>sponsoring our team</b>, or otherwise supporting us, <b>check out our sponsorship packet below.</b></span>
                 <Link class="w-max shrink-0 text-base font-normal" icon={forward} url="/Phoenix Phanatics - Sponsorship Packet.pdf">Check us out!</Link>
             </h2>
         </div>
     </div>
 
-    <div id="finances" class="w-full p-10 overflow-hidden">
+    <div id="finances" class="w-full md:p-10 mt-10 md:mt-0 overflow-hidden">
         <div class="flex flex-col bg-amber-800 m-auto p-10 relative z-10 w-full shadow-[0_-10px_20px_rgba(0,0,0,0.3)] text-white">
             <h1 class="uppercase text-4xl font-harmoni w-full py-5 max-w-5xl m-auto">Our Financials</h1>
             <div class="max-w-5xl m-auto">
