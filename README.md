@@ -1,42 +1,12 @@
-# sv
+# Phoenix Phanatics Website V2
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is the second revision of our website (the original version was made in React and looked horribly GPT'd). Made with love and went after our signature colors (yellow and purple) with our fonts (TAN Harmoni, Public Sans), same colors on our t-shirt. Went for a more android-looking card layout with collapsible items, interesting other stuff, and mainly a way to show information about our team.
 
-## Creating a project
+## how to run
+`npm run build`
+`npm run preview`
+or
+`npm run dev`
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-pnpm dlx sv@0.15.3 create --template minimal --types ts --add prettier tailwindcss="plugins:none" sveltekit-adapter="adapter:static" mcp="ide:other,vscode+setup:remote" --install pnpm ./
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## why so big?
+there's a lot of videos to handle the video player in the background.
