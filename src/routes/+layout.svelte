@@ -192,7 +192,8 @@
 				<span class="font-harmoni text-2xl/6 tracking-wider uppercase">Phoenix<br />Phanatics</span>
 			</div>
 			<div class="mx-auto text-center text-sm text-amber-200/50">
-				&copy; 2026 Phoenix Phanatics Team 11104. All rights reserved.
+				<p>&copy; 2026 Phoenix Phanatics (FRC Team 11104). All rights reserved.</p>
+				<p class="mt-1">A registered 501(c)(3) non-profit organization. EIN: 39-3628071</p>
 			</div>
 		</div>
 
