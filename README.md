@@ -3,12 +3,14 @@
 This is the second revision of our website (the original version was made in React and looked horribly GPT'd). Made with love and went after our signature colors (yellow and purple) with our fonts (TAN Harmoni, Public Sans), same colors on our t-shirt. Went for a more android-looking card layout with collapsible items, interesting other stuff, and mainly a way to show information about our team.
 
 ## how to run
+
 `npm run build`
 `npm run preview`
 or
 `npm run dev`
 
 ## why so big?
+
 there's a lot of videos to handle the video player in the background. it will take a while to clone and then set up, since sveltekit also uses enhanced images by modifying the image.
 
 ## more info
@@ -29,20 +31,20 @@ The result is a static SvelteKit site that emphasizes clarity, personality, and 
 
 The visual direction of the site is built around our established brand elements:
 
-* **Primary colors:** Yellow and Purple
-* **Typography:** TAN Harmoni and Public Sans
-* **Physical branding alignment:** The same color palette used on our merchandise and team apparel
+- **Primary colors:** Yellow and Purple
+- **Typography:** TAN Harmoni and Public Sans
+- **Physical branding alignment:** The same color palette used on our merchandise and team apparel
 
 Rather than following current startup design trends, the website intentionally leans into a more tactile, application-inspired experience. Many interface elements take inspiration from Android-style surfaces and cards, creating a layout that feels structured, interactive, and easy to navigate.
 
 Key design goals included:
 
-* Strong visual identity
-* Improved readability
-* Better information hierarchy
-* More personality and warmth
-* Mobile-first responsiveness
-* Fast loading and static deployment
+- Strong visual identity
+- Improved readability
+- Better information hierarchy
+- More personality and warmth
+- Mobile-first responsiveness
+- Fast loading and static deployment
 
 ---
 
@@ -54,10 +56,10 @@ One of the primary purposes of this revision is to make the people behind the or
 
 The website includes dedicated sections for team information, allowing visitors to learn:
 
-* Who we are
-* What we work on
-* Individual roles and interests
-* The personalities behind the projects
+- Who we are
+- What we work on
+- Individual roles and interests
+- The personalities behind the projects
 
 Instead of presenting the organization as an abstract entity, the site aims to highlight the humans who make everything happen.
 
@@ -69,10 +71,10 @@ The entire experience is built around modular cards.
 
 Benefits include:
 
-* Clear separation of content
-* Easier scanning on mobile devices
-* Consistent visual language
-* Flexible content organization
+- Clear separation of content
+- Easier scanning on mobile devices
+- Consistent visual language
+- Flexible content organization
 
 The card system allows sections to grow and evolve without requiring major layout changes.
 
@@ -84,10 +86,10 @@ Several sections use collapsible panels to keep information accessible without o
 
 This approach allows:
 
-* Cleaner page layouts
-* Reduced scrolling fatigue
-* Progressive disclosure of information
-* Better mobile usability
+- Cleaner page layouts
+- Reduced scrolling fatigue
+- Progressive disclosure of information
+- Better mobile usability
 
 Users can explore content at their own pace while keeping the interface uncluttered.
 
@@ -99,11 +101,11 @@ The website is fully static and generated through SvelteKit.
 
 Advantages include:
 
-* Fast page loads
-* Minimal hosting requirements
-* Improved security
-* Excellent caching support
-* Lower operational costs
+- Fast page loads
+- Minimal hosting requirements
+- Improved security
+- Excellent caching support
+- Lower operational costs
 
 The site can be deployed to virtually any static hosting platform.
 
@@ -113,10 +115,10 @@ The site can be deployed to virtually any static hosting platform.
 
 The layout is designed to work across:
 
-* Desktop
-* Laptop
-* Tablet
-* Mobile devices
+- Desktop
+- Laptop
+- Tablet
+- Mobile devices
 
 Special attention was given to maintaining consistent spacing, typography, and card behavior across different screen sizes.
 
@@ -126,28 +128,28 @@ Special attention was given to maintaining consistent spacing, typography, and c
 
 ### Framework
 
-* SvelteKit
+- SvelteKit
 
 ### Styling
 
-* Custom CSS
-* Responsive layouts
-* Brand-driven design system
+- Custom CSS
+- Responsive layouts
+- Brand-driven design system
 
 ### Fonts
 
-* TAN Harmoni
-* Public Sans
+- TAN Harmoni
+- Public Sans
 
 ### Deployment
 
 Compatible with any static hosting provider, including:
 
-* GitHub Pages
-* Cloudflare Pages
-* Netlify
-* Vercel (static output)
-* Self-hosted static servers
+- GitHub Pages
+- Cloudflare Pages
+- Netlify
+- Vercel (static output)
+- Self-hosted static servers
 
 ---
 
@@ -187,23 +189,23 @@ The website intentionally mirrors our broader visual identity.
 
 Our signature:
 
-* Yellow
-* Purple
+- Yellow
+- Purple
 
 These colors appear consistently throughout:
 
-* Interface components
-* Accent elements
-* Interactive states
-* Merchandise
-* Promotional material
+- Interface components
+- Accent elements
+- Interactive states
+- Merchandise
+- Promotional material
 
 ### Typography
 
 The combination of **TAN Harmoni** and **Public Sans** balances personality with readability:
 
-* TAN Harmoni provides character and distinction.
-* Public Sans provides clean, accessible body text.
+- TAN Harmoni provides character and distinction.
+- Public Sans provides clean, accessible body text.
 
 Together they create a visual style that feels both professional and approachable.
 

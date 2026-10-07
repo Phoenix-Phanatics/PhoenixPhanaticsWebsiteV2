@@ -45,20 +45,20 @@
 			help: "Argosy Foundation and Hack Club provided $2,000 that allowed us to upgrade our robot's drivetrain and parts, giving us a competitive edge we would not have been able to achieve otherwise."
 		},
 		{
+			id: 'slf',
+			name: 'Sulimani Law Firm',
+			logo: slf,
+			url: 'https://sulimanilawfirm.com',
+			amount: 'Amount: $500',
+			help: 'Sulimani Law Firm managed our nonprofit registration and business costs, and has continually sponsored us through both monetary and non-monetary needs that cannot be singly enumerated.'
+		},
+		{
 			id: 'bena',
 			name: 'BenaHealth',
 			logo: bena,
 			url: 'https://benahealth.com',
 			amount: 'Amount: $200',
 			help: 'BenaHealth provided us with a helpful sponsorship to help us with our transportation and outreach costs.'
-		},
-		{
-			id: 'slf',
-			name: 'Sulimani Law Firm',
-			logo: slf,
-			url: 'https://sulimanilawfirm.com',
-			amount: 'Non-monetary',
-			help: 'Sulimani Law Firm managed our nonprofit registration and business costs, and has continually sponsored us through both monetary and non-monetary needs that cannot be singly enumerated.'
 		}
 	]);
 </script>

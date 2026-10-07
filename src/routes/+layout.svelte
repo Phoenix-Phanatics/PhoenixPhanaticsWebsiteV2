@@ -84,7 +84,7 @@
 				></a
 			>
 			<div
-				class="invisible absolute left-0 mt-2 flex w-48 flex-col overflow-hidden rounded-xl rounded-tl-none border border-purple-800 bg-purple-900 opacity-0 shadow-2xl transition-all duration-300 *:px-4 *:py-3 *:transition-colors group-hover:visible group-hover:opacity-100 *:hover:bg-purple-800"
+				class="invisible absolute top-full left-0 flex w-48 flex-col overflow-hidden rounded-xl rounded-tl-none border border-purple-800 bg-purple-900 opacity-0 shadow-2xl transition-all duration-300 *:px-4 *:py-3 *:transition-colors group-hover:visible group-hover:opacity-100 *:hover:bg-purple-800"
 			>
 				<a href="/#about">About Us</a>
 				<a href="/#sponsors">Our Sponsors</a>
@@ -93,7 +93,7 @@
 		</div>
 
 		<div class="group relative">
-			<a href="/info#what" class="contacts">
+			<a href="/info" class="contacts">
 				<span
 					class="border-white py-2 hover:text-white {page.url.pathname == '/info' &&
 						'border-b-2'} flex cursor-pointer items-center gap-1 transition-colors">Info</span
@@ -102,13 +102,60 @@
 		</div>
 
 		<div class="group relative">
-			<a href="/sponsors#sponsors" class="contacts">
+			<a href="/about" class="contacts">
 				<span
-					class="flex cursor-pointer items-center gap-1 py-2 transition-colors hover:text-white {page
-						.url.pathname == '/sponsors' && 'border-b-2'}">Sponsors</span
+					class="border-white py-2 hover:text-white {page.url.pathname == '/about' &&
+						'border-b-2'} flex cursor-pointer items-center gap-1 transition-colors">About Us</span
 				>
 			</a>
 		</div>
+
+		<div class="group relative">
+			<div
+				class="py-2 {(page.url.pathname == '/sponsors' || page.url.pathname == '/help-us') &&
+					'border-b-2'} flex cursor-pointer items-center gap-1 transition-colors hover:text-white"
+			>
+				Support <svg
+					class="h-4 w-4 transition-transform group-hover:rotate-180"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+					></path></svg
+				>
+			</div>
+			<div
+				class="invisible absolute top-full left-0 flex w-48 flex-col overflow-hidden rounded-xl rounded-tl-none border border-purple-800 bg-purple-900 opacity-0 shadow-2xl transition-all duration-300 *:px-4 *:py-3 *:transition-colors group-hover:visible group-hover:opacity-100 *:hover:bg-purple-800"
+			>
+				<a href="/sponsors">Sponsors</a>
+				<a href="/help-us">Help Us</a>
+			</div>
+		</div>
+
+		<button
+			class="ml-2 rounded-full p-2 transition-colors hover:bg-white/10"
+			onclick={() => document.documentElement.classList.toggle('dark')}
+			aria-label="Toggle dark mode"
+		>
+			<svg class="hidden h-5 w-5 dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<!-- Sun icon for dark mode (click to go light) -->
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+				/>
+			</svg>
+			<svg class="block h-5 w-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<!-- Moon icon for light mode (click to go dark) -->
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+				/>
+			</svg>
+		</button>
 	</nav>
 </header>
 
@@ -157,26 +204,16 @@
 			<b>inspire and become inspired</b> by and through robotics! We've made it through our first season,
 			and are ready to go forward!
 		</p>
-		<div class="mx-auto flex w-max flex-row gap-2 p-5">
-			<!--            <Button href="/">Join us</Button>-->
-			<!--            <Button href="/">Contact us</Button>-->
-		</div>
 	</div>
 	<div class="absolute bottom-8 px-2 text-center text-sm text-white/50">
 		Sponsored by Sulimani Law Firm, NASA, Hack Club, Argosy Foundation, BenaHealth for the 2026
 		Season.<br />
-		<b class="text-white"
-			>Are you interested in joining us and want to experience how it feels to be in FRC? Consider
-			joining us for <a class="animate-pulse underline" href="/duelday#main"
-				>Duel on the Delaware!</a
-			></b
-		>
 	</div>
 </div>
 
 {@render children()}
 
-<footer class="relative z-50 w-full bg-purple-950 px-10 py-8 text-amber-100 shadow-inner">
+<footer class="relative z-50 w-full bg-amber-950 px-10 py-8 text-amber-100 shadow-inner">
 	<div
 		class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-8 md:flex-row md:items-start"
 	>

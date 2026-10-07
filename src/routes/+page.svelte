@@ -253,20 +253,20 @@
 					<enhanced:img src={hc} alt="Hack Club" class="h-full w-full object-contain" />
 				</a>
 				<a
-					href="https://benahealth.com"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="flex h-32 max-w-75 min-w-37.5 flex-auto cursor-pointer items-center justify-center rounded-xl bg-white p-4 shadow-lg transition-transform duration-300 hover:scale-105 hover:-rotate-10"
-				>
-					<enhanced:img src={bena} alt="BenaHealth" class="h-full w-full object-contain" />
-				</a>
-				<a
 					href="https://sulimanilawfirm.com"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="flex h-32 max-w-75 min-w-37.5 flex-auto cursor-pointer items-center justify-center rounded-xl bg-white p-4 shadow-lg transition-transform duration-300 hover:scale-105 hover:-rotate-10"
 				>
 					<enhanced:img src={slf} alt="Sulimani law firm" class="h-full w-full object-contain" />
+				</a>
+				<a
+					href="https://benahealth.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex h-32 max-w-75 min-w-37.5 flex-auto cursor-pointer items-center justify-center rounded-xl bg-white p-4 shadow-lg transition-transform duration-300 hover:scale-105 hover:-rotate-10"
+				>
+					<enhanced:img src={bena} alt="BenaHealth" class="h-full w-full object-contain" />
 				</a>
 			</div>
 			<Link icon={forward} class="mt-2 w-max self-end" url="/sponsors#sponsors">View more</Link>

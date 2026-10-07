@@ -2,8 +2,9 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		document.querySelector("#address")!.textContent = "64 Independence Drive, East Brunswick, NJ 08816";
-	})
+		document.querySelector('#address')!.textContent =
+			'64 Independence Drive, East Brunswick, NJ 08816';
+	});
 </script>
 
 <svelte:head>
@@ -34,11 +35,12 @@
 					witness, but also actively participate in helping our robot make it onto the field!
 				</p>
 				<p class="mb-4">
-					While this competition is aimed towards high school students who will be attending grade 9-12
-					in the 2026-27 school year, younger students are also invited to come, albeit with parental supervision
-					to meet child safety rules. Parents of students are welcome to join us, but due to space limitations,
-					they may not be able to enter our team's workspace. This event is free and does not require any future
-					commitment to our team; it is meant to be a preview to FIRST Robotics for anyone interested.
+					While this competition is aimed towards high school students who will be attending grade
+					9-12 in the 2026-27 school year, younger students are also invited to come, albeit with
+					parental supervision to meet child safety rules. Parents of students are welcome to join
+					us, but due to space limitations, they may not be able to enter our team's workspace. This
+					event is free and does not require any future commitment to our team; it is meant to be a
+					preview to FIRST Robotics for anyone interested.
 				</p>
 				<iframe
 					src="https://drive.google.com/file/d/10Rgu_y2t97EaiDcZ79tL8FtK-zUj8oQE/preview"
@@ -53,14 +55,16 @@
 					>
 				</div>
 
-				<h2 class="mb-2 pt-4 text-2xl font-bold">
-					Event Information
-				</h2>
+				<h2 class="mb-2 pt-4 text-2xl font-bold">Event Information</h2>
 				<p>
-					Date: Saturday, June 20th, 2026<br>
-					Time: 7am-6pm (you can come late/leave early but please provide us with warning)<br>
-					Location: Salem Community College, Davidow Building, 460 Hollywood Ave, Carneys Point, NJ 08069<br>
-					Please note that <b>our team will be trying to arrange transportation for anyone who needs it.</b> If you are unable to find transportation to or from the event, you may still be able to come; we will do our best to accommodate you.
+					Date: Saturday, June 20th, 2026<br />
+					Time: 7am-6pm (you can come late/leave early but please provide us with warning)<br />
+					Location: Salem Community College, Davidow Building, 460 Hollywood Ave, Carneys Point, NJ 08069<br
+					/>
+					Please note that
+					<b>our team will be trying to arrange transportation for anyone who needs it.</b> If you are
+					unable to find transportation to or from the event, you may still be able to come; we will do
+					our best to accommodate you.
 				</p>
 			</div>
 		</div>
@@ -70,29 +74,31 @@
 			<h1 class="font-harmoni m-auto w-full max-w-5xl py-5 text-4xl uppercase">Join us!</h1>
 
 			<div class="m-auto max-w-5xl">
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc6-C_5mVUcoGpSouVSdm_BM9EfKQJ5V8dAEJE0r7LyFQoiOQ/viewform?usp=header"
-						width="100%"
-						height="480"></iframe>
+				<iframe
+					src="https://docs.google.com/forms/d/e/1FAIpQLSc6-C_5mVUcoGpSouVSdm_BM9EfKQJ5V8dAEJE0r7LyFQoiOQ/viewform?usp=header"
+					width="100%"
+					height="480"
+				></iframe>
 				<div class="mt-1 text-sm">
 					Registration form. <a
 						class="underline"
 						href="https://docs.google.com/forms/d/e/1FAIpQLSc6-C_5mVUcoGpSouVSdm_BM9EfKQJ5V8dAEJE0r7LyFQoiOQ/viewform?usp=header"
-				>View on Google Forms</a
-				>
+						>View on Google Forms</a
+					>
 				</div>
-				<p class="mb-4 mt-1">
+				<p class="mt-1 mb-4">
 					If you'd like to join us for Duel on the Delaware, fill out the <b>registration form</b>
 					above! This will provide us with information necessary to ensure you'll be able to
 					<b>attend as a part of our team</b>, and join us with the robot.
 				</p>
 				<p class="mb-4">
 					We also highly recommend you try to <b>join us at a build meeting</b> before the
-					competition. Over the next two and a half weeks before the event, our team will be meeting on every
-					weekday at <span class="font-bold" id="address">ENABLE JAVASCRIPT</span>, from 7 PM to 9 PM. Attending team meetings will
-					allow you to meet our team, receive training, and participate in more roles at Duel.
-					<br><br>
-					If you're interested in joining us for a build meeting, please reach
-					out to us through our
+					competition. Over the next two and a half weeks before the event, our team will be meeting
+					on every weekday at <span class="font-bold" id="address">ENABLE JAVASCRIPT</span>, from 7
+					PM to 9 PM. Attending team meetings will allow you to meet our team, receive training, and
+					participate in more roles at Duel.
+					<br /><br />
+					If you're interested in joining us for a build meeting, please reach out to us through our
 					<a class="underline" href="mailto:phoenixphanatics11104@gmail.com"
 						>email (phoenixphanatics11104@gmail.com)</a
 					>, our Instagram (<a
